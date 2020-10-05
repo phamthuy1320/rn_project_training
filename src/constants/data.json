@@ -1,0 +1,38 @@
+{
+    "users":[
+        {"userId":1,
+        "usename":"thuy",
+        "email":"phamthithuy@gmail.com",
+        "password":"123456",
+        "avatar":"https://iupac.org/wp-content/uploads/2018/05/default-avatar.png",
+        "fullName":"Pham Thi Thuy",
+        "description":"abc"
+        }
+
+    ],
+    "todos":[
+        {"userId":1,
+        "categoryId":1,
+        "name":"todo ",
+        "state":"complete",
+        "start":"10:00",
+        "end":"13:00",
+        "date":"25-09",
+        "location":"101 "
+        },
+        {"userId":1,
+            "categoryId":1,
+            "name":"todo 1",
+            "state":"processing",
+            "start":"10:00",
+            "end":"13:00",
+            "date":"26-09",
+            "location":"101 "
+            }
+    ],
+    "categories":[
+        {"categoryId":1,
+        "name":"sport"
+        }
+    ]
+}

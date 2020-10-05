@@ -1,0 +1,43 @@
+  return (
+    <View>
+      <View style={styles.viewHeader} >
+        <TouchableOpacity onPress={() => navigation.navigate('Main')} >
+          <Image onPress={() => navigation.navigate('Main')} source={{ uri: iconBack }} style={styles.iconBack} />
+        </TouchableOpacity>
+        <View style={{ marginTop: -12 }}>
+          <Text style={{ fontSize: 20, fontWeight: "bold" }} > Task To Day</Text>
+          <Text>  {weekOfDay}, {Month}, {day}</Text>
+        </View>
+      </View>
+  </View>
+  );
+
+
+
+    var monthNames = ['January', 'February', 'March', 'April', 'May', 'June',
+    'July', 'August', 'September', 'October', 'November', 'December	']
+  const day = new Date().getDate();
+  const Month = monthNames[new Date().getMonth()]
+  var weekOfDay = new Date().getDay();
+  switch (new Date().getDay()) {
+    case 0:
+      weekOfDay = "Sunday";
+      break;
+    case 1:
+      weekOfDay = "Monday";
+      break;
+    case 2:
+      weekOfDay = "Tuesday";
+      break;
+    case 3:
+      weekOfDay = "Wednesday";
+      break;
+    case 4:
+      weekOfDay = "Thursday";
+      break;
+    case 5:
+      weekOfDay = "Friday";
+      break;
+    case 6:
+      weekOfDay = "Saturday";
+  }
